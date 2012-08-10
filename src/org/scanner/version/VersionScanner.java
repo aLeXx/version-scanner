@@ -1,7 +1,9 @@
 package org.scanner.version;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -31,23 +33,22 @@ public class VersionScanner {
 		}
 	}
 
-	private static class Version {
-		public Map<String, String> versions = new HashMap<String, String>();
-	}
-
 	private static DocumentBuilder DB;
-	private Map<Artifact, Version> artifacts;
+	private Map<Artifact, Map<String, List<String>>> artifacts;
 
 	public void process(String directory) {
-		artifacts = new HashMap<Artifact, Version>();
+		artifacts = new HashMap<Artifact, Map<String, List<String>>>();
 		scanDir(new File(directory));
-		for (Map.Entry<Artifact, Version> entryArtifact : artifacts.entrySet()) {
-			Version version = entryArtifact.getValue();
-			if (version.versions.size() > 1) {
+		for (Map.Entry<Artifact, Map<String, List<String>>> entryArtifact : artifacts.entrySet()) {
+			Map<String, List<String>> version = entryArtifact.getValue();
+			if (version.size() > 1) {
 				Artifact artifact = entryArtifact.getKey();
 				System.out.println("group '" + artifact.group + "' artifact '" + artifact.id + "':");
-				for (Map.Entry<String, String> entryVersion : version.versions.entrySet()) {
-					System.out.println("\tversion '" + entryVersion.getKey() + "' @ " + entryVersion.getValue());
+				for (Map.Entry<String, List<String>> entryVersion : version.entrySet()) {
+					System.out.println("\tversion '" + entryVersion.getKey() + '\'');
+					for(String name : entryVersion.getValue()) {
+						System.out.println("\t\t@ " + name);
+					}
 				}
 			}
 		}
@@ -90,13 +91,18 @@ public class VersionScanner {
 				mvnPath = mvnPath.substring(index + 1);
 				index = mvnPath.indexOf('/');
 				artifact.id = mvnPath.substring(0, index);
-				mvnPath = mvnPath.substring(index + 1);
-				Version version = artifacts.get(artifact);
-				if (null == version) {
-					version = new Version();
-					artifacts.put(artifact, version);
+				String version = mvnPath.substring(index + 1);
+				Map<String, List<String>> versions = artifacts.get(artifact);
+				if (null == versions) {
+					versions = new HashMap<String, List<String>>();
+					artifacts.put(artifact, versions);
 				}
-				version.versions.put(mvnPath, name);
+				List<String> names = versions.get(version);
+				if (null == names) {
+					names = new ArrayList<String>();
+					versions.put(version, names);
+				}
+				names.add(name);
 			}
 		}
 		
