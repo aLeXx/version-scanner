@@ -1,0 +1,109 @@
+group 'joda-time' artifact 'joda-time':
+    version '1.6.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\jclouds\karaf\jclouds-karaf\1.3.2_3\jclouds-karaf-1.3.2_3-features.xml
+    version '2.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+group 'commons-codec' artifact 'commons-codec':
+    version '1.6' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '1.4' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\esb\ee\features\5.2.0-SNAPSHOT\features-5.2.0-SNAPSHOT.xml
+group 'commons-pool' artifact 'commons-pool':
+    version '1.5.6' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\esb\features\5.2.0-SNAPSHOT\features-5.2.0-SNAPSHOT.xml
+    version '1.5.4' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+group '' artifact '':
+    version 'scriptengines.googlecode.com/svn/m2-repo/!com.google.code.scriptengines/scriptengines-jruby/1.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version 'scriptengines.googlecode.com/svn/m2-repo/!com.google.code.scriptengines/scriptengines-groovy/1.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version 'maven.restlet.org!org.restlet.jse/org.restlet/2.0.10' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version 'scriptengines.googlecode.com/svn/m2-repo/!com.google.code.scriptengines/scriptengines-javascript/1.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'org.apache.activemq' artifact 'activemq-pool':
+    version '5.4.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '5.5.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.ehcache':
+    version '2.4.3_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '2.5.1_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+group 'com.hazelcast' artifact 'hazelcast':
+    version '1.9.4.8' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\cellar\apache-karaf-cellar\2.2.5-SNAPSHOT\apache-karaf-cellar-2.2.5-SNAPSHOT-features.xml
+    version '1.9.4.6' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '1.9.4' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+group 'org.springframework' artifact 'spring-core':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'javax.mail' artifact 'mail':
+    version '1.4.4' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '1.4.5' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'com.google.code.gson' artifact 'gson':
+    version '1.7.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\esb\features\5.2.0-SNAPSHOT\features-5.2.0-SNAPSHOT.xml
+    version '2.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\jclouds\karaf\jclouds-karaf\1.3.2_3\jclouds-karaf-1.3.2_3-features.xml
+group 'org.apache.activemq' artifact 'activemq-ra':
+    version '5.4.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '5.5.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.apache.mina' artifact 'mina-core':
+    version '2.0.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.0.4' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.asm':
+    version '2.2.3_5' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '3.3.1_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'org.apache.activemq' artifact 'kahadb':
+    version '5.4.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '5.5.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.apache.activemq' artifact 'activemq-core':
+    version '5.4.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '5.5.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.apache.servicemix.specs' artifact 'org.apache.servicemix.specs.saaj-api-1.3':
+    version '1.9.0' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '1.8.0' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.jasypt':
+    version '1.9.0_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '1.6_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '1.7_3' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.velocity':
+    version '1.6.2_3' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+    version '1.7_4' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'org.springframework' artifact 'spring-beans':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'org.codehaus.jettison' artifact 'jettison':
+    version '1.3.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '1.3' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'org.apache.httpcomponents' artifact 'httpclient-osgi':
+    version '4.1.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\bpm\bonita\bpm-server\5.6.2\bpm-server-5.6.2.xml
+    version '4.1.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\jclouds\karaf\jclouds-karaf\1.3.2_3\jclouds-karaf-1.3.2_3-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.oro':
+    version '2.0.8_6' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '2.0.8_3' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.apache.activemq' artifact 'activemq-console':
+    version '5.4.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '5.5.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.apache.servicemix.specs' artifact 'org.apache.servicemix.specs.scripting-api-1.0':
+    version '1.9.0' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '1.5.0' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\activemq\activemq-karaf\5.5.1\activemq-karaf-5.5.1-features.xml
+group 'org.springframework' artifact 'spring-webmvc':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.commons-beanutils':
+    version '1.8.3_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\esb\features\5.2.0-SNAPSHOT\features-5.2.0-SNAPSHOT.xml
+    version '1.7.0_3' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+group 'org.apache.aries.transaction' artifact 'org.apache.aries.transaction.manager':
+    version '0.2-incubating' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+    version '0.3.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\enterprise\2.2.9-SNAPSHOT\enterprise-2.2.9-SNAPSHOT-features.xml
+group 'org.apache.httpcomponents' artifact 'httpcore-osgi':
+    version '4.1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\jclouds\karaf\jclouds-karaf\1.3.2_3\jclouds-karaf-1.3.2_3-features.xml
+    version '4.1.2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\bpm\bonita\bpm-server\5.6.2\bpm-server-5.6.2.xml
+group 'org.springframework' artifact 'spring-web':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'org.springframework' artifact 'spring-aop':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'org.springframework' artifact 'spring-context':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.aopalliance':
+    version '1.0_6' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '1.0_5' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\jclouds\karaf\jclouds-karaf\1.3.2_3\jclouds-karaf-1.3.2_3-features.xml
+group 'org.apache.servicemix.specs' artifact 'org.apache.servicemix.specs.activation-api-1.1':
+    version '2.0.0' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\talend\bpm\bonita\bpm-server\5.6.2\bpm-server-5.6.2.xml
+    version '1.9.0' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\cxf\karaf\apache-cxf\2.6.2-SNAPSHOT\apache-cxf-2.6.2-SNAPSHOT-features.xml
+group 'org.apache.servicemix.bundles' artifact 'org.apache.servicemix.bundles.netty':
+    version '3.2.6.Final_1' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\camel\karaf\apache-camel\2.9.3-SNAPSHOT\apache-camel-2.9.3-SNAPSHOT-features.xml
+    version '3.2.3.Final_2' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\jclouds\karaf\jclouds-karaf\1.3.2_3\jclouds-karaf-1.3.2_3-features.xml
+group 'org.springframework' artifact 'spring-context-support':
+    version '3.0.7.RELEASE' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
+    version '2.5.6.SEC02' @ d:\Talend-ESB-V5.2.0-SNAPSHOT\container\system\org\apache\karaf\assemblies\features\standard\2.2.9-SNAPSHOT\standard-2.2.9-SNAPSHOT-features.xml
