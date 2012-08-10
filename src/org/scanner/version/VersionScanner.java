@@ -1,10 +1,10 @@
 package org.scanner.version;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -34,17 +34,17 @@ public class VersionScanner {
 	}
 
 	private static DocumentBuilder DB;
-	private Map<Artifact, Map<String, List<String>>> artifacts;
+	private Map<Artifact, Map<String, Set<String>>> artifacts;
 
 	public void process(String directory) {
-		artifacts = new HashMap<Artifact, Map<String, List<String>>>();
-		scanDir(new File(directory));
-		for (Map.Entry<Artifact, Map<String, List<String>>> entryArtifact : artifacts.entrySet()) {
-			Map<String, List<String>> version = entryArtifact.getValue();
+		artifacts = new HashMap<Artifact, Map<String, Set<String>>>();
+		scanDir(new File(directory), directory.length());
+		for (Map.Entry<Artifact, Map<String, Set<String>>> entryArtifact : artifacts.entrySet()) {
+			Map<String, Set<String>> version = entryArtifact.getValue();
 			if (version.size() > 1) {
 				Artifact artifact = entryArtifact.getKey();
 				System.out.println("group '" + artifact.group + "' artifact '" + artifact.id + "':");
-				for (Map.Entry<String, List<String>> entryVersion : version.entrySet()) {
+				for (Map.Entry<String, Set<String>> entryVersion : version.entrySet()) {
 					System.out.println("\tversion '" + entryVersion.getKey() + '\'');
 					for(String name : entryVersion.getValue()) {
 						System.out.println("\t\t@ " + name);
@@ -54,13 +54,13 @@ public class VersionScanner {
 		}
 	}
 
-	private void scanDir(File dir) {
+	private void scanDir(File dir, int base) {
 		for (File file : dir.listFiles()) {
 			if (file.isDirectory()) {
-				scanDir(file);
+				scanDir(file, base);
 			} else {
 				if (file.getName().endsWith(".xml")) {
-					parseXml(getDocument(file), file.getAbsolutePath());
+					parseXml(getDocument(file), file.getAbsolutePath().substring(base));
 				}
 			}
 		}
@@ -92,14 +92,14 @@ public class VersionScanner {
 				index = mvnPath.indexOf('/');
 				artifact.id = mvnPath.substring(0, index);
 				String version = mvnPath.substring(index + 1);
-				Map<String, List<String>> versions = artifacts.get(artifact);
+				Map<String, Set<String>> versions = artifacts.get(artifact);
 				if (null == versions) {
-					versions = new HashMap<String, List<String>>();
+					versions = new HashMap<String, Set<String>>();
 					artifacts.put(artifact, versions);
 				}
-				List<String> names = versions.get(version);
+				Set<String> names = versions.get(version);
 				if (null == names) {
-					names = new ArrayList<String>();
+					names = new HashSet<String>();
 					versions.put(version, names);
 				}
 				names.add(name);
