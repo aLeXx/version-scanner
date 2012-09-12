@@ -83,7 +83,7 @@ public class VersionScanner {
 				}
 				Element bundle = (Element) nodeBundle;
 				String mvnPath = bundle.getTextContent();
-				mvnPath = mvnPath.substring(mvnPath.lastIndexOf(':') + 1);
+				mvnPath = mvnPath.substring(mvnPath.indexOf(':') + 1);
 
 				Artifact artifact = new Artifact();
 				int index = mvnPath.indexOf('/');
