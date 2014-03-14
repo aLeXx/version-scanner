@@ -24,6 +24,8 @@ import org.w3c.dom.Node;
 
 public class VersionScanner {
 
+    public static final boolean CHECK_EXISTING_ONLY = true;
+
     private static class Artifact {
         private final String group;
         private final String id;
@@ -110,24 +112,32 @@ public class VersionScanner {
                     continue;
                 }
                 Element bundle = (Element) nodeBundle;
-                Parser mvnPath = new Parser(bundle.getTextContent().substring("mvn:".length()));
+                try {
+                    URL bundleURL = new URL(bundle.getTextContent());
+                    if (CHECK_EXISTING_ONLY) {
+                        bundleURL.openStream().close();
+                    }
 
-                Artifact artifact = new Artifact(mvnPath.getGroup(), mvnPath.getArtifact());
-                Map<String, Set<String>> versions = artifacts.get(artifact);
-                if (null == versions) {
-                    versions = new HashMap<String, Set<String>>();
-                    artifacts.put(artifact, versions);
+                    Parser mvnPath = new Parser(bundleURL.getPath());
+
+                    Artifact artifact = new Artifact(mvnPath.getGroup(), mvnPath.getArtifact());
+                    Map<String, Set<String>> versions = artifacts.get(artifact);
+                    if (null == versions) {
+                        versions = new HashMap<String, Set<String>>();
+                        artifacts.put(artifact, versions);
+                    }
+                    String version = mvnPath.getVersion();
+                    Set<String> names = versions.get(version);
+                    if (null == names) {
+                        names = new HashSet<String>();
+                        versions.put(version, names);
+                    }
+                    names.add(name);
+                } catch (Exception e) { // pax-url-mvn throws RuntimeException instead of IOException
+                    // no such artifact in local repo
                 }
-                String version = mvnPath.getVersion();
-                Set<String> names = versions.get(version);
-                if (null == names) {
-                    names = new HashSet<String>();
-                    versions.put(version, names);
-                }
-                names.add(name);
             }
         }
-        
     }
 
     private static Document getDocument(InputStream is) {
